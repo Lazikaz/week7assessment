@@ -8,6 +8,8 @@ function sumToZero(array){
     }
     return("No possible combination returns to 0")
 }
+//runtime should be O(n^2) due to two for loops
+
 
 function uniqueWord(string){
     let arr = string.split("")
@@ -20,6 +22,8 @@ function uniqueWord(string){
     }
     return true
 }
+//runtime should also be O(n^2) due to two for loops
+
 
 function pangram(sentence){
     let realSentence = sentence.toLowerCase()
@@ -37,6 +41,8 @@ function pangram(sentence){
         return false
     }
 }
+//Runtime should be O(n) as it only has to iterate over the sentence once
+
 
 function find_longest_word(array){
     let longestWordLetterCount = 0
@@ -47,5 +53,4 @@ function find_longest_word(array){
     }
     return longestWordLetterCount
 }
-
-console.log(find_longest_word(["hi", "hello", "biggest"]))
+//Runtime should be O(n) because of one for loop
